@@ -199,7 +199,7 @@ for n,c in sorted(centrality.items()):
     print("%s %0.2f"%(n,c))
  ```
  
- ## Betweenness Centrality
+## Betweenness Centrality
 
 Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. It was introduced as a measure for quantifying the control of a human on the communication between other humans in a social network by Linton Freeman[26] In his conception, vertices that have a high probability to occur on a randomly chosen shortest path between two randomly chosen vertices have a high betweenness. <a href="https://en.wikipedia.org/wiki/Centrality">Source</a>
 
