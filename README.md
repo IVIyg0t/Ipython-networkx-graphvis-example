@@ -4,9 +4,9 @@
 
 Please install Homebrew if you're running on OSX.  You will need it to get pygraphviz to install correctly.
 
-`pip install networkx numpy scipy matplotlib pyyaml`
-`brew install graphviz`
-`pip install --global-option=build_ext --global-option="-I/usr/local/Cellar/graphviz/2.38.0/include/"  --global-option="-L/usr/local/Cellar/graphviz/2.38.0/lib/" pygraphviz`
+- `pip install networkx numpy scipy matplotlib pyyaml`
+- `brew install graphviz`
+- `pip install --global-option=build_ext --global-option="-I/usr/local/Cellar/graphviz/2.38.0/include/"  --global-option="-L/usr/local/Cellar/graphviz/2.38.0/lib/" pygraphviz`
 
 # Create a graph
 ```python
