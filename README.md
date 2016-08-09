@@ -285,3 +285,13 @@ A.draw(graphFile)
 from IPython.display import Image, display
 display(Image(graphFile))
 ```
+
+# Write Graph to GraphML File
+```python
+nx.write_graphml(gml,'example2.xml')
+```
+
+## Write our House Security Example to a graphML File
+```python
+nx.write_graphml(dg,'house-security-example.xml')
+```

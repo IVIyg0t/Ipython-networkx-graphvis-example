@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="weight" attr.type="int" for="edge" id="d0" />
+  <graph edgedefault="directed">
+    <node id="House Security" />
+    <node id="Uniqueness of Opener" />
+    <node id="Locked" />
+    <node id="Number of Houses" />
+    <node id="Window Security" />
+    <node id="Traffic on Street" />
+    <node id="Material" />
+    <node id="Awareness of Neighbors" />
+    <node id="Homeowner" />
+    <node id="Fence Security" />
+    <node id="Location" />
+    <node id="Spare Key" />
+    <node id="Location and Height" />
+    <node id="Neighborhood" />
+    <node id="Height" />
+    <node id="Garage Security" />
+    <node id="Latched" />
+    <node id="Door Security" />
+    <edge source="Uniqueness of Opener" target="Garage Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Locked" target="Door Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Number of Houses" target="Neighborhood">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Window Security" target="House Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Traffic on Street" target="Neighborhood">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Material" target="Window Security">
+      <data key="d0">3</data>
+    </edge>
+    <edge source="Material" target="Garage Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Material" target="Fence Security">
+      <data key="d0">3</data>
+    </edge>
+    <edge source="Material" target="Door Security">
+      <data key="d0">3</data>
+    </edge>
+    <edge source="Awareness of Neighbors" target="Neighborhood">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Homeowner" target="Spare Key">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Homeowner" target="Locked">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Homeowner" target="Latched">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Fence Security" target="House Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Location" target="Door Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Spare Key" target="Door Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Location and Height" target="Window Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Neighborhood" target="House Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Height" target="Fence Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Garage Security" target="House Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Latched" target="Window Security">
+      <data key="d0">1</data>
+    </edge>
+    <edge source="Door Security" target="House Security">
+      <data key="d0">1</data>
+    </edge>
+  </graph>
+</graphml>
