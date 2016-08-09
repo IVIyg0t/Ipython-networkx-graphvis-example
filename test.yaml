@@ -1,0 +1,108 @@
+!!python/object:networkx.classes.digraph.DiGraph
+adj: &id001
+  Awareness of Neighbors:
+    Neighborhood: &id018 {}
+  Door Security:
+    House Security: &id011 {}
+  Fence Security:
+    House Security: &id012 {}
+  Garage Security:
+    House Security: &id013 {}
+  Height:
+    Fence Security: &id007 {}
+  Homeowner:
+    Latched: &id016 {}
+    Locked: &id017 {}
+    Spare Key: &id021 {}
+  House Security: {}
+  Latched:
+    Window Security: &id022 {}
+  Location:
+    Door Security: &id003 {}
+  Location and Height:
+    Window Security: &id023 {}
+  Locked:
+    Door Security: &id004 {}
+  Material:
+    Door Security: &id005 {}
+    Fence Security: &id008 {}
+    Garage Security: &id009 {}
+    Window Security: &id024 {}
+  Neighborhood:
+    House Security: &id014 {}
+  Number of Houses:
+    Neighborhood: &id019 {}
+  Spare Key:
+    Door Security: &id006 {}
+  Traffic on Street:
+    Neighborhood: &id020 {}
+  Uniqueness of Opener:
+    Garage Security: &id010 {}
+  Window Security:
+    House Security: &id015 {}
+adjlist_dict_factory: &id002 !!python/name:__builtin__.dict ''
+edge: *id001
+edge_attr_dict_factory: *id002
+graph: {}
+node:
+  Awareness of Neighbors: {}
+  Door Security: {}
+  Fence Security: {}
+  Garage Security: {}
+  Height: {}
+  Homeowner: {}
+  House Security: {}
+  Latched: {}
+  Location: {}
+  Location and Height: {}
+  Locked: {}
+  Material: {}
+  Neighborhood: {}
+  Number of Houses: {}
+  Spare Key: {}
+  Traffic on Street: {}
+  Uniqueness of Opener: {}
+  Window Security: {}
+node_dict_factory: *id002
+pred:
+  Awareness of Neighbors: {}
+  Door Security:
+    Location: *id003
+    Locked: *id004
+    Material: *id005
+    Spare Key: *id006
+  Fence Security:
+    Height: *id007
+    Material: *id008
+  Garage Security:
+    Material: *id009
+    Uniqueness of Opener: *id010
+  Height: {}
+  Homeowner: {}
+  House Security:
+    Door Security: *id011
+    Fence Security: *id012
+    Garage Security: *id013
+    Neighborhood: *id014
+    Window Security: *id015
+  Latched:
+    Homeowner: *id016
+  Location: {}
+  Location and Height: {}
+  Locked:
+    Homeowner: *id017
+  Material: {}
+  Neighborhood:
+    Awareness of Neighbors: *id018
+    Number of Houses: *id019
+    Traffic on Street: *id020
+  Number of Houses: {}
+  Spare Key:
+    Homeowner: *id021
+  Traffic on Street: {}
+  Uniqueness of Opener: {}
+  Window Security:
+    Latched: *id022
+    Location and Height: *id023
+    Material: *id024
+succ: *id001
