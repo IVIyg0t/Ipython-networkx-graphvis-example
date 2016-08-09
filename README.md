@@ -215,3 +215,73 @@ centrality = nx.edge_betweenness_centrality(dg)
 for n,c in sorted(centrality.items()):
     print("%s %0.2f"%(n,c))
 ```
+
+# Add weights to edges
+```python
+dg = nx.DiGraph()
+nodes = ['House Security',
+         'Garage Security',
+         'Material',
+         'Uniqueness of Opener',
+         'Window Security',
+         'Material',
+         'Location and Height',
+         'Latched',
+         'Door Security',
+         'Locked',
+         'Spare Key',
+         'Homeowner',
+         'Location',
+         'Fence Security',
+         'Height',
+         'Neighborhood',
+         'Awareness of Neighbors',
+         'Traffic on Street',
+         'Number of Houses']
+edges = [
+    ('Garage Security','House Security', 1),
+    ('Material','Garage Security', 1),
+    ('Uniqueness of Opener','Garage Security', 1),
+    ('Window Security','House Security', 1),
+    ('Material','Window Security', 3),
+    ('Location and Height','Window Security', 1),
+    ('Latched','Window Security', 1),
+    ('Door Security','House Security',1),
+    ('Locked','Door Security',1),
+    ('Spare Key','Door Security',1),
+    ('Homeowner','Spare Key',1),
+    ('Homeowner','Locked',1),
+    ('Homeowner','Latched',1),
+    ('Location','Door Security',1),
+    ('Material','Door Security',3),
+    ('Fence Security','House Security',1),
+    ('Material','Fence Security',3),
+    ('Height','Fence Security',1),
+    ('Neighborhood','House Security',1),
+    ('Awareness of Neighbors','Neighborhood',1),
+    ('Traffic on Street','Neighborhood',1),
+    ('Number of Houses','Neighborhood',1)]
+dg.add_nodes_from(nodes)
+for i in edges :
+    dg.add_edge(i[0],i[1],weight=i[2])
+```
+
+## Weighted Centrality Measurements
+Thankfully NetworkX has built in the ability to calculate weighted centrality measurements using the same functions.  Essentially... If edges of a graph have weights, they will automatically be taken into account.  No need to use different functions.  Simply add your weights, and plug & chug. 
+
+# Importing Graphs from GraphML
+`gml = nx.read_graphml('example.xml')`
+
+## Convert to GraphViz object for better display
+```python
+graphFile = 'testGraphML.png'
+A = nx.drawing.nx_agraph.to_agraph(gml)
+A.layout(prog='dot')
+A.draw(graphFile)
+```
+
+## Open the image in IPython
+```python
+from IPython.display import Image, display
+display(Image(graphFile))
+```
