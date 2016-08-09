@@ -142,6 +142,8 @@ A.draw(graphFile)
 from IPython.display import Image, display
 display(Image(graphFile)
 ```
+![alt text](https://github.com/IVIyg0t/Ipython-networkx-graphvis-example/blob/master/test.png "House Security Network")
+
 
 ## Output a graph to YAML structure
 ```python
@@ -285,6 +287,8 @@ A.draw(graphFile)
 from IPython.display import Image, display
 display(Image(graphFile))
 ```
+![alt text](https://github.com/IVIyg0t/Ipython-networkx-graphvis-example/blob/master/testGraphML.png "Example GraphML")
+
 
 # Write Graph to GraphML File
 ```python
